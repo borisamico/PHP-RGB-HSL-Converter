@@ -96,7 +96,7 @@ function rgb2hsl($rgb) {
         }
         
         $h = $h_ / 6;
-        $s = 1 - abs(2 * $l - 1);
+        $s = $chroma / (1 - abs(2 * $l - 1));
     }
     
     // Return HSL Color as array
